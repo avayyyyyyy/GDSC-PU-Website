@@ -13,5 +13,5 @@ Connect with us in one place.
 | [Youtube](https://www.youtube.com/@GDSCPoornimaUniversity-qf7fw)
 | [Instagram](https://www.instagram.com/gdsc.poornima/)
 | [Github](https://github.com/gdsc-Poornima-University)
-| [Website](https://gdscjgec.github.io/)
+| [Website](https://gdsc-poornima-university.github.io/GDSC-PU-Website/)
 | [Mail Us](mailto:gdsc.poornimauniversity@gmail.com)
