@@ -76,7 +76,7 @@ main {
     /* height: calc(100vh - 70px); */
     padding-inline: 5%;
     /* width: 100%; */
-    background-color: #f9fafb;
+    /* background-color: #f9fafb; */
 }
 
 left-main {
@@ -142,7 +142,7 @@ main-foot i {
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
-    background-color: #f9fafb;
+    /* background-color: #f9fafb; */
     min-height: 100vh;
     position: relative;
     /* padding-block: 40px; */
@@ -468,31 +468,94 @@ main4-top h2 {
 }
 
 main4-top h4 {
-    padding-inline: 5%;
+    padding-left: 25px;
     color: #4b5563;
     font-size: 2rem;
 }
 
-event-card {
-    width: 260px;
-    height: 100px;
-    display: flex;
-    border-radius: 5px;
-    box-shadow: 3px 3px 8.5px 3px #7a7a7a;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 1.25rem 0 0.625rem 2.5rem;
+/* this card is inspired form this - https://georgefrancis.dev/ */
+
+.card {
+    --border-radius: 0.75rem;
+    --primary-color: #d9a40d;
+    --secondary-color: #505238;
+    width: 210px;
+    font-family: "Arial";
     padding: 1rem;
+    cursor: pointer;
+    margin: 10px 25px;
+    border-radius: var(--border-radius);
+    background: #f1f1f3;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 30%);
+    position: relative;
+}
+
+.card>*+* {
+    margin-top: 1.1em;
+}
+
+.card .card__content {
+    color: var(--secondary-color);
+    font-size: 0.86rem;
+}
+
+.card .card__title {
+    padding: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.card .card__date {
+    color: #6e6b80;
+    font-size: 0.8rem;
+}
+
+.card .card__arrow {
+    position: absolute;
+    background: var(--primary-color);
+    padding: 0.4rem;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    bottom: 0;
+    right: 0;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card svg {
+    transition: 0.2s;
+}
+
+/* hover */
+.card:hover .card__title {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.card:hover .card__arrow {
+    background: #111;
+}
+
+.card:hover .card__arrow svg {
+    transform: translateX(3px);
 }
 
 .new-events {
     margin-bottom: 1.25rem;
+    height: auto;
 }
 
-event-card img {
+.new-events h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.new-events a {
+    text-decoration: none;
+    color: #4B5563;
 }
 
 button {
@@ -519,7 +582,7 @@ button {
     align-items: center;
     justify-content: center;
     background-color: rgb(15, 15, 15);
-    border: 3px solid black ;
+    border: 3px solid black;
     color: white;
     font-weight: 600;
     padding-inline: 4px;
@@ -549,6 +612,19 @@ button {
 
 .past-events {
     display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.past-events a {
+    text-decoration: none;
+    color: #4B5563;
+}
+
+.past-events h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main4-foot {
@@ -693,6 +769,7 @@ main5-between {
         /* Adjust the padding for smaller screens */
         flex-direction: column;
         align-items: center;
+        height: auto;
     }
 
     main a {
@@ -701,14 +778,19 @@ main5-between {
         align-items: center;
     }
 
+    main-foot {
+        display: none;
+    }
+
     main-foot i {
         display: none;
+        opacity: 0;
     }
 
     left-main {
         width: 100%;
-        padding-left: 20px;
-        text-align: center;
+        /* padding-left: 20px; */
+        /* text-align: center; */
     }
 
     left-main h1 {
@@ -726,6 +808,7 @@ main5-between {
 
     main2-top {
         padding-inline: 40px;
+        margin-top: 340px;
     }
 
     main2-top h2 {
@@ -744,7 +827,8 @@ main5-between {
 
     main2-foot {
         padding-block: 20px;
-        /* width: fit-content; */
+        opacity: 0;
+        width: fit-content;
     }
 
     .main2-foot .cards>.card>h3 {
@@ -755,9 +839,9 @@ main5-between {
         /* flex-direction: column; */
         flex-wrap: wrap;
         padding-inline: 20px;
-        gap: 20px;
+        /* gap: 20px; */
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         width: 60%;
         margin: auto;
         text-align: center;
@@ -785,8 +869,20 @@ main5-between {
         width: 100%;
     }
 
+    main4-top {
+        margin-top: 753px;
+    }
+
+    main4-top h4{
+        padding-left: 0px;
+    }
+
     .bcard-avatar img {
         max-width: 80px;
+    }
+
+    main5-top {
+        margin-top: 500px;
     }
 
     .button {
@@ -807,6 +903,7 @@ main5-between {
     main {
         /* margin-top: 80px; */
         width: 100%;
+        height: auto;
         margin: 40px;
     }
 
@@ -823,6 +920,16 @@ main5-between {
     .main4-top h4,
     .main4-foot i {
         font-size: 2rem;
+
+    }
+
+    .main4-top {
+        padding-inline: 40px;
+        margin-top: 580px;
+    }
+
+    .main4-top h2 {
+        /* margin-top: 400px; */
     }
 
     .main2-top h3:nth-child(3),
@@ -837,8 +944,23 @@ main5-between {
         gap: 40px;
     }
 
+    .new-events{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .past-events {
+        justify-content: center;
+        align-items: center;
+    }
+
     .card {
         width: 100%;
+        margin: 10px 0px;
+    }
+
+    a.card{
+        width: 50%;
     }
 
     .card h3 {
