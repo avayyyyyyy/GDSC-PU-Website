@@ -10,7 +10,7 @@ Connect with us in one place.
 
  [Chapter](https://gdsc.community.dev/poornima-university-jaipur/)
 | [LinkedIn](https://www.linkedin.com/in/gdsc-poornima-university-34696528a)
-| [Youtube](https://www.youtube.com/@GDSCPoornimaUniversity-qf7fw)
+| [Youtube](https://www.youtube.com/@GDSCPoornimaUniversity)
 | [Instagram](https://www.instagram.com/gdsc.poornima/)
 | [Github](https://github.com/gdsc-Poornima-University)
 | [Website](https://gdsc-poornima-university.github.io/GDSC-PU-Website/)
